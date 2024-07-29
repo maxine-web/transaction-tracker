@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Transaction Tracker</title>
+</head>
+<body>
+  <header>
+    <h1 id="month"></h1>
+  </header>
+  <main>
+    <category id="bills">
+      <h2 class="title">Bills & Health</h2>
+      <payment>
+        <span>Dentist: $100.00</span>
+      </payment>
+    </category>
+    <!-- <category id="luxury">
+      <h2 class="title">Luxury</h2>
+    </category>
+    <category id="restaurants">
+      <h2 class="title">Restaurants & Shops</h2>
+    </category>
+    <category id="savings">
+      <h2 class="title">Savings & Investments</h2>
+    </category>
+    <category id="supermarkets">
+      <h2 class="title">Supermarkets</h2>
+    </category>
+    <category id="travel">
+      <h2 class="title">Travel</h2>
+    </category> -->
+  </main>
+  <form action="#">
+    <label for="category">Choose a category:</label>
+    <select id="category" name="category">
+      <option value=""></option>
+      <option value="bills">Bills & Health</option>
+      <option value="luxury">Luxury</option>
+      <option value="restaurants">Restaurants & Shops</option>
+      <option value="savings">Savings & Investments</option>
+      <option value="supermarkets">Supermarkets</option>
+      <option value="travel">Travel</option>
+    </select>
+    <label for="item">Item:</label>
+    <input type="text" id="item" name="item">
+    <label for="cost">Cost:</label>
+    <input type="number" id="cost" name="cost">
+    <button id="submit" type="button">Submit</button>
+  </form>
+</body>
+<script src="script.js"></script>
+</html>
